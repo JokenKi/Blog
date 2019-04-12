@@ -10,3 +10,7 @@
        grant all on *.* to yushan@”%” identified by “123″ ;(执行完会在mysql.user表插入一条记录，all表示所有权限(包括增 删 改 查等权限)，
        *.* 表示所有数据库，yushan为添加的用户名，123为密码,%为匹配的所有主机，上面的信息都可以指定如grant select,update on db.* to 
        yushan@localhost identified by ’123″;)
+   5)、创建数据库，并指定编码
+       CREATE DATABASE mydatabase CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+   6)、导入SQL文件
+       mysql -u username -p database_name < file.sql
