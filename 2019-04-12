@@ -18,3 +18,4 @@
    1）、查询数据库隔离级别 select @@tx_isolation
    2）、mysql默认隔离级别 repeated_read --可重复读
    3）、事务隔离级别: 读未提交的(read_uncommited) 读已提交的(read_commited) 可重复读(read_repeated) 串行化(serializable) 
+   4）、查看行锁竞争情况: show status like 'innodb_row_lock%';
